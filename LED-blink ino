@@ -1,0 +1,5 @@
+int red = 3;int green = 4;int yellow = 5;
+void setup(){pinMode(red, OUTPUT);pinMode(green, OUTPUT);pinMode(yellow, OUTPUT);}
+void loop() {digitalWrite(red, HIGH);digitalWrite(green, HIGH);digitalWrite(yellow, HIGH);delay(500);  digitalWrite(red, HIGH);digitalWrite(green, LOW);digitalWrite(yellow, LOW);delay(500);
+digitalWrite(red, LOW);digitalWrite(green, HIGH);digitalWrite(yellow, LOW);delay(500);
+digitalWrite(red, LOW);digitalWrite(green, LOW);digitalWrite(yellow, HIGH);delay(500);}
